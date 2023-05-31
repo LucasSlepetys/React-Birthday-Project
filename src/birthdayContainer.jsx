@@ -12,7 +12,7 @@ function BirthdayContainer() {
     <div className='container'>
       <h3>{data.length} Birthdays this month</h3>
       {data.map((person) => {
-        return <Person key={person.id} {...person} />;
+        return <Person id={person.id} {...person} />;
       })}
 
       <button type='button' onClick={clearList}>

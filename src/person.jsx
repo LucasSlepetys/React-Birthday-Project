@@ -1,7 +1,7 @@
-const Person = ({ key, name, age, img }) => {
+const Person = ({ id, name, age, image }) => {
   return (
-    <section key={key}>
-      <img src={img} alt='Photo' />
+    <section key={id}>
+      <img src={image} alt='Photo' />
       <h4>{name}</h4>
       <p>{age} Years</p>
     </section>
